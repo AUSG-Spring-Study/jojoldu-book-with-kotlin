@@ -16,6 +16,7 @@ internal class HelloResponseDtoTest {
         val dto = HelloResponseDto(name, amount)
 
         // then
+        
         assertAll(
             Executable { assertThat(dto.name).isEqualTo(name) },
             Executable { assertThat(dto.amount).isEqualTo(amount) },
